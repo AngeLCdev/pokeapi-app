@@ -1,3 +1,7 @@
-body{
- font-size: 1rem;   
-}
+@use "normalize";
+@use "body";
+@use "header";
+@use "tipos";
+@use "detalleTipo";
+@use "moves";
+@use "pokemon";

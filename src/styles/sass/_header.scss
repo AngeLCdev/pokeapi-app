@@ -1,0 +1,10 @@
+.g-header{
+    margin: 1rem;
+    &__img{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+    }
+}
