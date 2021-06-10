@@ -8,7 +8,7 @@ const fromApiResponseToData = (apiResponse) => {
     moves,
     pokemon,
   } = apiResponse;
-  console.log(apiResponse);
+
   const {
     double_damage_from,
     double_damage_to,

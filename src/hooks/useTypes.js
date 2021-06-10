@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import getTypes from "services/getTypes";
 
 export function useTypes() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [tipos, setTipos] = useState([]);
 
   useEffect(

@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function InfoTipo({ datos }) {
-  console.log(datos);
   const { generation, move_damage_class } = datos;
 
   return (

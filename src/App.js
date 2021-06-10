@@ -2,8 +2,10 @@ import "styles/css/index.css";
 
 import HomePage from "pages/Home/Home";
 import DetalleTipoPage from "pages/DetalleTipo/index";
+import DetalleMovimiento from "pages/DetalleMovimiento";
 
 import { Link, Route, Switch } from "wouter";
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
         <Switch>
           <Route component={HomePage} path="/" />
           <Route component={DetalleTipoPage} path="/tipo/detalle/:id" />
+          <Route component={DetalleMovimiento} path="/movimiento/detalle/:id" />
         </Switch>
       </main>
     </>

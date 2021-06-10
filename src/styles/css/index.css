@@ -452,6 +452,9 @@ body {
 .m-move__title::before {
   content: "~ ";
 }
+.m-move__title a {
+  color: inherit;
+}
 
 .m-pokemon {
   padding: 1rem;

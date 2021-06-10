@@ -19,7 +19,6 @@ export default function DetalleTipo({ datos, type }) {
     pokemon,
   } = datos;
 
-  console.log(pokemon);
 
   const datosInfo = {
     generation,

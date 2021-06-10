@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import getDetalleTipo from "services/getDetalleTipo";
+import getDetalleMove from 'services/getDetalleMove';
 
-export function useDetalleTipo({keyword}) {
+export function useDetalleMovimiento({keyword}) {
   const [loading, setLoading] = useState(true);
   const [detalleTipo, setDetalleTipo] = useState([]);
 
@@ -9,7 +9,7 @@ export function useDetalleTipo({keyword}) {
     function () {
       setLoading(true);
 
-      getDetalleTipo({keyword})
+      getDetalleMove({keyword})
       .then(tiposApi => {
         setDetalleTipo(tiposApi);
         setLoading(false);
