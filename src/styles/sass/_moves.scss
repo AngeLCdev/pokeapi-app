@@ -26,5 +26,15 @@
     a{
       color: inherit;
     }
+
+
+  }
+
+  &__name{
+    margin: 1rem 0;
+    a{
+      color: inherit;
+      text-transform: capitalize;
+    }
   }
 }

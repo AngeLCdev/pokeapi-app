@@ -1,0 +1,22 @@
+.m-stats{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1rem;
+    }
+
+    &__stat{
+        text-transform: uppercase;
+    }
+
+    &__info{
+        margin: 1rem 0;
+
+        &--item{
+            margin: 1rem 0;
+        }
+        &--title{
+            font-weight: 600;
+        }
+    }
+}

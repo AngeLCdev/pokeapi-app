@@ -15,6 +15,36 @@
     text-transform: uppercase;
     border-bottom: 1px solid variables.$color-border-type;
   }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--title {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: variables.$fs-pokemon-name;
+    letter-spacing: 0.4rem;
+  }
+
+  &__index {
+    font-size: variables.$fs-pokemon-index;
+  }
+
+  &__info{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
 }
 
 .m-poke {
@@ -22,6 +52,10 @@
     text-align: center;
     &::before {
       content: "· ";
+    }
+
+    a {
+      color: inherit;
     }
   }
 }

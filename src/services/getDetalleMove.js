@@ -1,9 +1,9 @@
 import { API_URL } from "./settings";
 
 const fromApiResponseToData = (apiResponse) => {
-  const { pp, power, names, accuracy, type } = apiResponse;
-  console.log(apiResponse)
-  return { pp, power, names, accuracy, type };
+  const { pp, power, names, accuracy, type, priority } = apiResponse;
+
+  return { pp, power, names, accuracy, type, priority };
 };
 
 export default function getDetalleTipo({ keyword } = { keyword: "normal" }) {

@@ -6,7 +6,14 @@ export default function ListaDeTipos({ tipos }) {
     <div className="m-tipos__container">
       <div className='m-tipos'>
         {tipos.map((tipo) => (
-          <Tipo key={`tipo${tipo.name}`} name={tipo.name} />
+          <>
+          {
+            tipo.type 
+            ? <Tipo key={`tipo${tipo.type.name}`} name={tipo.type.name} />
+            : <Tipo key={`tipo${tipo.name}`} name={tipo.name} />
+          }
+          
+          </>
         ))}
 
       </div>

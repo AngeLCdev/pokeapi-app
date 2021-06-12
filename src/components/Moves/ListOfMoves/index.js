@@ -8,7 +8,13 @@ export default function ListOfMoves({ movimientos }) {
       <div className="m-moves__title">Movimientos</div>
       <div className="m-moves">
         {movimientos.map((movimiento) => (
-          <Move key={`tipo${movimiento.name}`} name={movimiento.name} />
+          <>
+          {
+            movimiento.move 
+            ? <Move key={`tipo${movimiento.move.name}`} name={movimiento.move.name} />
+            : <Move key={`tipo${movimiento.name}`} name={movimiento.name} />
+          }
+          </>
         ))}
       </div>
     </div>

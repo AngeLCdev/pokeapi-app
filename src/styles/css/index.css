@@ -455,6 +455,13 @@ body {
 .m-move__title a {
   color: inherit;
 }
+.m-move__name {
+  margin: 1rem 0;
+}
+.m-move__name a {
+  color: inherit;
+  text-transform: capitalize;
+}
 
 .m-pokemon {
   padding: 1rem;
@@ -472,12 +479,70 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #ccc;
 }
+.m-pokemon__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.m-pokemon__header--title {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.m-pokemon__name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
+.m-pokemon__index {
+  font-size: 1.2rem;
+}
+.m-pokemon__info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
 
 .m-poke__title {
   text-align: center;
 }
 .m-poke__title::before {
   content: "· ";
+}
+.m-poke__title a {
+  color: inherit;
+}
+
+.m-sprite__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-sprites__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.m-stats__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+.m-stats__stat {
+  text-transform: uppercase;
+}
+.m-stats__info {
+  margin: 1rem 0;
+}
+.m-stats__info--item {
+  margin: 1rem 0;
+}
+.m-stats__info--title {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=index.css.map */
